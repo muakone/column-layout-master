@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -36,15 +39,17 @@
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
-        <div class="input">
-          <input type="email" name="" placeholder="Enter your email">
-          <div class="Get-started">
-            <div class="button first">
-              <a href="#">Get Started</a>
+        <form action="">
+          <div class="inputs">
+            <input type="email" name="" placeholder="Enter your email">
+            <div class="Get-started">
+              <div class="button first">
+                <a href="#">Get Started</a>
+              </div>
+              <p class="hide">please check your email</p>
             </div>
-            <p class="hide">please check your email</p>
           </div>
-        </div>
+        </form>
       </div>
       <div class="image-secure">
         <img class="illustration-1" src="./images/illustration-1.svg" alt="">
@@ -69,8 +74,8 @@
                 live collaboration. No email attachments required!
               </p>
               <div class="fylo-works">
-                <p>See how Fylo works <img src="./images/icon-arrow.svg" alt=""></p>
-                <span class="underline"></span>
+                <p class="arrow">See how Fylo works</p>
+                <hr>
               </div>
             </div>
             <div class="box">
@@ -79,9 +84,9 @@
                 Fylo has improved our team productivity by an order of magnitude. Since 
                 making the switch our team has become a well-oiled collaboration machine.
               </p>
-              <figure>
+              <figure  id="avatar">
                 <img src="./images/avatar-testimonial.jpg" alt="">
-                <figcaption>
+                <figcaption id="author">
                   <strong>Kyle Burton</strong>
                   <p>Founder & CEO, Huddle</p>
                 </figcaption>
@@ -102,36 +107,40 @@
           </p>
         </div>
         <div class="access-form">
-          <div class="input-form">
-            <input type="email" name="" placeholder="email@example.com">
-            <div class="access-started">
-              <div class="button second">
-                <a href="#">Get Started For Free</a>
-              </div>
-              <div class="hide2">
-                <p>please check your email</p>
+          <form action="">
+            <div class="input-form">
+              <input type="email" name="" placeholder="email@example.com">
+              <div class="access-started">
+                <div class="button second">
+                  <a href="#">Get Started For Free</a>
+                </div>
+                <div class="hide2">
+                  <p>please check your email</p>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </div>
   </main>
   <footer>
     <div class="footer">
-      <img src="./images/logo.svg" alt="">
+      <img class="footer-logo" src="./images/logo.svg" alt="">
       <div class="infocenter">
         <div class="contacts">
-          <div class="Phone">
-            <p>
-              Phone: +1-543-123-4567
-            </p>
-          </div>
-          <div class="mail">
-            <p>
-              example@fylo.com
-            </p>
-          </div>
+          <figure class="phone">
+            <img src="./images/icon-phone.svg" alt="">
+            <figcaption>
+              <p>+1-543-123-4567</p>
+            </figcaption>
+          </figure>
+          <figure class="mail">
+            <img src="./images/icon-email.svg" alt="">
+            <figcaption>
+              <p>example@huddle.com</p>
+            </figcaption>
+          </figure>
         </div>
         <div class="Ourinfo">
           <div class="first-info">
